@@ -1,0 +1,13 @@
+# Node modules
+Frontend/pdfbot/node_modules/
+
+# Python environment
+Backend/myenv/
+Backend/__pycache__/
+
+# Secrets
+.env
+
+# OS files
+.DS_Store
+Thumbs.db

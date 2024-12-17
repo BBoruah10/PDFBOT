@@ -1,0 +1,253 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  transition: all 0.3s ease;
+}
+
+/* Sidebar Styles */
+/* Sidebar */
+.sidebar {
+  width: 25%;
+  background: linear-gradient(135deg, #2e4767, #1e2f47);
+  color: white;
+  padding: 20px;
+  position: relative;
+  font-family: "Courier New", Courier, monospace;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: rgb(225, 17, 17);
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.close-btn:hover {
+  transform: scale(1.2);
+  color: white;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #d1e8ff;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.upload-section {
+  margin-top: 30px;
+}
+
+.file-input {
+  display: block;
+  margin: 20px auto;
+  width: 90%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px dashed #4caf50;
+  background: rgba(255, 255, 255, 0.1);
+  color: #d1e8ff;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.file-input:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.uploaded-title {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #e0f2f1;
+}
+
+.uploaded-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.uploaded-item:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.pdf-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.success-message {
+  margin-top: 20px;
+  color: #76ff03;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Toggle Button */
+.toggle-sidebar-btn {
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-sidebar-btn:hover {
+  transform: scale(1.2);
+  background: linear-gradient(135deg, #1d6fa5, #1a5f90);
+}
+
+/* Main Content Styles */
+.main-content {
+  flex: 1;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  text-align: center;
+}
+
+.main-content h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2e4767;
+  margin-bottom: 15px;
+}
+
+.instructions {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Question Box Styles */
+.question-box-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.question-input {
+  width: 100%;
+  height: 100px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+
+.question-input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Loading Spinner */
+.loading-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #4caf50;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Answer Box */
+.answer-box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.answer-text {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.answer-text h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* Sidebar success message */
+.upload-message {
+  color: #4caf50;
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}

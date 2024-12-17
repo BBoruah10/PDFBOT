@@ -1,0 +1,3 @@
+myenv/
+faiss_index/
+.env
